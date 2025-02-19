@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+            rel="stylesheet">
+    <style>
+        /* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+/* Navigation Bar */
+header {
+    background: hsla(241, 68%, 25%, 0.936);
+    padding: 15px 0;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1100px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.nav-links a:hover,
+.nav-links .active {
+    border-bottom: 2px solid white;
+}
+
+/* Services Section */
+.services {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+}
+
+h1 {
+    font-size: 36px;
+    color: hsla(241, 68%, 25%, 0.936);
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+/* Service Boxes */
+.service-box {
+    background: white;
+    padding: 30px;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+}
+
+h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background: hsla(241, 68%, 25%, 0.936);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #0d105d;
+}
+
+    </style>
+</head>
+<body>
+
+    <div class="container-3">
+        <div class="nav-container scrolled">
+            <div class="logo-nav">
+                <h1>EduRevolution</h1>
+            </div>
+            <div class="icon" onclick="toggleMenu()"><i class="fa-solid fa-bars"></i></div>
+        </div>
+    </div><!--container-3-->
+    <div class="menu-container" id="menu">
+        <div class="menu-text">
+         <li><a href="index.html">Education</a></li>
+         <li><a href="home.html">Education</a></li>
+         <li><a href="about.html">About</a></li>
+         <li><a href="services.html">Services</a></li>
+         <li><a href="contect.html">Contact</a></li>
+         </div>
+ </div>
+
+    <!-- Services Section -->
+    <section class="services" style="padding-top: 80px;">
+        <div class="container">
+            <h1>Our Services</h1>
+            <p>We provide cutting-edge technology solutions to transform education through Augmented Reality (AR), Virtual Reality (VR), Extended Reality (XR), and the Internet of Things (IoT).</p>
+            
+            <div class="service-box">
+                <h2>📌 Augmented Reality (AR) in Education</h2>
+                <p>Bring textbooks to life with AR overlays that provide 3D models, interactive graphics, and real-time engagement.</p>
+                <a href="about.html" class="btn">Learn More</a>
+            </div>
+
+            <div class="service-box">
+                <h2>📌 Virtual Reality (VR) Learning Environments</h2>
+                <p>Step into fully immersive virtual classrooms, conduct virtual field trips, and explore complex subjects in a hands-on way.</p>
+                <a href="about.html" class="btn">Explore VR</a>
+            </div>
+
+            <div class="service-box">
+                <h2>📌 Extended Reality (XR) for Interactive Learning</h2>
+                <p>Combine AR and VR to create dynamic, mixed-reality experiences that enhance collaboration and engagement.</p>
+                <a href="about.html" class="btn">Discover XR</a>
+            </div>
+
+            <div class="service-box">
+                <h2>📌 Smart Classrooms with IoT</h2>
+                <p>Implement AI-driven IoT solutions for real-time student performance tracking, environmental adjustments, and data-driven teaching.</p>
+                <a href="about.html" class="btn">See IoT in Action</a>
+            </div>
+        </div>
+    </section>
+
+    <div class="footer-box">
+        <h3>IED</h3>
+        <div class="div-logo">
+            <a href="https://www.facebook.com/ImmersiveEducation"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.instagram.com/immersiveeducation/"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://x.com/Immersive?mx=2"><i class="fa-brands fa-twitter"></i></i></a>
+        </div>
+    </div>
+    <div class="footer-container">
+        <p>© 2025 Inscread Engagement. Empowering Education through AR, VR, XR, and IoT.</p>
+    </div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
